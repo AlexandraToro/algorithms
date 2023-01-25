@@ -72,7 +72,7 @@ public class Task01 {
                 return node.next;
             }
 
-            public static ListNode revertList(ListNode node) {
+            public static ListNode revert(ListNode node) {
                 if (node == null)
                     return null;
                 return revertList(node, null);
@@ -97,7 +97,7 @@ public class Task01 {
             System.out.println(list);
             list = ListNodeUtils.removeFirst(list);
             System.out.println(list);
-            list = ListNodeUtils.revertList(list);
+            list = ListNodeUtils.revert(list);
             System.out.println(list);
         }
     }
